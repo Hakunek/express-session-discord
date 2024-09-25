@@ -57,7 +57,9 @@
         "type": "git",
         "url": "https://github.com/Hakunek/express-session-discord.git"
     },
-    "scripts": {},
+    "scripts": {
+        "apply": "git commit -a -m \"changes applied\" && git push && pnpm publish --access public --publish-branch main"
+    },
     "dependencies": {
         "@types/express": "*",
         "discord-api-types": "^0.37.101",

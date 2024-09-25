@@ -152,15 +152,15 @@ declare namespace session {
     type DiscordOAuth2User = {
         id: String;
         username: String;
-        avatar: String?;
+        avatar: String | null;
         discriminator: String;
         public_flags: import("discord.js").UserFlags;
         flags: import("discord.js").UserFlags;
-        banner: String?;
-        accent_color: String?;
+        banner: String | null;
+        accent_color: String | null;
         global_name: String;
         avatar_decoration_data: null;
-        banner_color: String?;
+        banner_color: String | null;
         clan: null;
         mfa_enabled: boolean;
         locale: import("discord.js").Locale;
@@ -169,11 +169,11 @@ declare namespace session {
     type DiscordOAuth2Guild = {
         id: String;
         name: String;
-        icon: String?;
-        banner: String?;
+        icon: String | null;
+        banner: String | null;
         owner: boolean;
         permissions: import("discord.js").PermissionResolvable;
-        permissions_new: String; // This field is not documented within official docs, or at least I could no find it
+        permissions_new: String; // This field is not documented within official docs, or at least I could no find it, but it is returned by api as of 25.09.2024
         features: import("discord.js").GuildFeature[];
     };
 
