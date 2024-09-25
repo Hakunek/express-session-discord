@@ -13,7 +13,7 @@ I am lazy, feel free to be toxic about it
 
 ## Installation
 
-> `npm install --save @types/express-session-discord`
+
 
 ## Summary
 
