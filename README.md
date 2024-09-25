@@ -2,9 +2,11 @@
 
 This is not original package @types/express-session
 I modified it to make Session class include 2 more properties as I'm using it while having fun with Discord's OAuth2
-user and guilds
+the 2 properties are:
+* user
+* guilds
 
-Why I did this?
+Why did I do this?
 so I do not have to type `//@ts-ignore` before every line where I use `req.session.user`
 YES
 I am lazy, feel free to be toxic about it
