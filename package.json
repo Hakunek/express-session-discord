@@ -1,6 +1,6 @@
 {
     "name": "@hakunek/express-session-discord",
-    "version": "1.0.3",
+    "version": "1.0.5",
     "description": "TypeScript definitions for express-session",
     "homepage": "https://github.com/Hakunek/express-session-discord",
     "license": "MIT",
