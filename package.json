@@ -1,8 +1,8 @@
 {
-    "name": "@hakunek/express-session",
-    "version": "1.18.0",
+    "name": "@hakunek/express-session-discord",
+    "version": "1.0.0",
     "description": "TypeScript definitions for express-session",
-    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express-session",
+    "homepage": "https://github.com/Hakunek/express-session-discord",
     "license": "MIT",
     "contributors": [
         {
@@ -55,8 +55,7 @@
     "types": "index.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
-        "directory": "types/express-session"
+        "url": "https://github.com/Hakunek/express-session-discord.git"
     },
     "scripts": {},
     "dependencies": {
