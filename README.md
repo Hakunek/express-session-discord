@@ -14,7 +14,7 @@ I am lazy, feel free to be toxic about it
 
 ## Installation
 
-`npm i @hakunek/express-session-discord`
+`npm i -D @hakunek/express-session-discord`
 
 ## Summary
 
