@@ -58,7 +58,7 @@
         "url": "https://github.com/Hakunek/express-session-discord.git"
     },
     "scripts": {
-        "apply": "git commit -a -m \"changes applied\" || git push || pnpm publish --access public --publish-branch main --otp"
+        "apply": "git commit -a -m \"changes applied\" & git push & pnpm publish --access public --publish-branch main"
     },
     "dependencies": {
         "@types/express": "*",
