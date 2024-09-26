@@ -12,6 +12,25 @@ so I do not have to type `//@ts-ignore` before every line where I use `req.sessi
 YES
 I am lazy, feel free to be toxic about it
 
+Ps.
+Sorry for not being any good at typescript stuff
+current version forces me to use `//@ts-ignore`, but luckily only in one place
+
+```js
+app.use(
+            //@ts-ignore
+            session({
+                cookie: { secure: true },
+                store: new MemoryStore({ checkPeriod: 86400000 }),
+                secret: this.secretLong,
+                resave: false,
+                saveUninitialized: false,
+            })
+```
+
+If you are better at typescript and are able to fix this, feel free to open a PR
+I will merge as soon as I verify that it got fixed
+
 ## Installation
 
 `npm i -D @hakunek/express-session-discord`

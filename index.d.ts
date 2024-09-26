@@ -180,6 +180,9 @@ declare namespace session {
     class Session {
         private constructor(request: Express.Request, data: SessionData);
 
+        user: DiscordOAuth2User;
+        guilds: DiscordOAuth2Guild[];
+
         /**
          * Each session has a unique ID associated with it.
          * This property is an alias of `req.sessionID` and cannot be modified.
@@ -193,10 +196,6 @@ declare namespace session {
          * For example we can set `req.session.cookie.expires` to `false` to enable the cookie to remain for only the duration of the user-agent.
          */
         cookie: Cookie;
-
-        user: DiscordOAuth2User;
-
-        guilds: DiscordOAuth2Guild[];
 
         /** To regenerate the session simply invoke the method. Once complete, a new SID and `Session` instance will be initialized at `req.session` and the `callback` will be invoked. */
         regenerate(callback: (err: any) => void): this;
