@@ -18,14 +18,14 @@ current version forces me to use `//@ts-ignore`, but luckily only in one place
 
 ```js
 app.use(
-            //@ts-ignore
-            session({
-                cookie: { secure: true },
-                store: new MemoryStore({ checkPeriod: 86400000 }),
-                secret: this.secretLong,
-                resave: false,
-                saveUninitialized: false,
-            })
+    //@ts-ignore
+    session({
+        cookie: { secure: true },
+        store: new MemoryStore({ checkPeriod: 86400000 }),
+        secret: "Mouse Ate The Cat...",
+        resave: false,
+        saveUninitialized: false,
+}));
 ```
 
 If you are better at typescript and are able to fix this, feel free to open a PR
