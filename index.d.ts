@@ -173,15 +173,12 @@ declare namespace session {
         banner: String | null;
         owner: boolean;
         permissions: import("discord.js").PermissionResolvable;
-        permissions_new: String; // This field is not documented within official docs, or at least I could no find it, but it is returned by api as of 25.09.2024
+        permissions_new: String; // This field is not documented within official docs, or at least I could no find it, but it is returned by api
         features: import("discord.js").GuildFeature[];
     };
 
     class Session {
         private constructor(request: Express.Request, data: SessionData);
-
-        user: DiscordOAuth2User;
-        guilds: DiscordOAuth2Guild[];
 
         /**
          * Each session has a unique ID associated with it.
